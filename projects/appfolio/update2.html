@@ -719,9 +719,9 @@ CAPs allow us to incorporate various information about properties (e.g. price, l
 <p>For now, since we focused on preparing a better model for Appfolio’s CS Capstone which only contains Santa Barbara Counties, tuning on just the Santa Barbara Counties was our best bet.</p>
 <p>The hyperparameters we tuned are k = LATENT_DIM, encoder_structure = ENCODER_DIMS, act_fn = ACT_FUNC, likelihood = LIKELIHOOD, n_epochs = NUM_EPOCHS, batch_size = BATCH_SIZE, learning_rate = LEARNING_RATE and beta_kl = BETA. The metric we want to look at is Mean Average Precision. Since we are experimenting with multimodality, we tune for two different models, one including Constraint Adaptive Priors and another without. At the moment, the only feature we’ve included for multimodality is geographic location by longitude and latitude.</p>
 <p><img alt="" src="https://cdn.discordapp.com/attachments/927717200247275561/949423920602304552/Screen_Shot_2022-03-03_at_3.49.25_PM.png" /></p>
-<p>| <em>Figure 1. Testing Results for the best model for no Constraint Adaptive Prior.</em> [1]|</p>
+<p>|<em>Testing Results for the best model for no Constraint Adaptive Prior.</em>|</p>
 <p><img alt="" src="https://cdn.discordapp.com/attachments/927717200247275561/949423768231608320/Screen_Shot_2022-03-03_at_3.51.02_PM.png" /></p>
-<p>| <em>Figure 2. Testing Results for the best model with Constraint Adaptive Prior.</em> [2]|</p>
+<p>|<em>Figure 2. Testing Results for the best model with Constraint Adaptive Prior.</em>|</p>
 <p>Above are the results from running the experiment and applying the best models to the testing data. Since we are looking at comparing the models using the Mean Average Precision, we see that metric increasing slightly when we add features using Constraint Adaptive Priors.</p>
 </div>
 <div class="section" id="data-cleaning">
@@ -742,7 +742,7 @@ CAPs allow us to incorporate various information about properties (e.g. price, l
 <h2>Future Goals<a class="headerlink" href="#future-goals" title="Permalink to this headline">¶</a></h2>
 <p>After meeting our goal for the end of this quarter, which was  implementing a simple recommendation model in the CS capstone, we look forward to improving our current model by incorporating multimodality. By incorporating multimodality, we would be looking at different features to use like latitude, longitude, property type, prices and images. In addition, we would still take time to test other models if we can achieve a better performance than the current model on the website.</p>
 <p>Although the CS Capstone website is showing only properties in Santa Barbara County, we would like to see if we can build a model that can be applied to a larger geographic area, like all of California or the entire country.</p>
-<p>| <img alt="example.gif" src="../../_images/1_0_GIF_2.gif" /> |</p>
+<p><img alt="example.gif" src="../../_images/1_0_GIF_2.gif" /></p>
 </div>
 </div>
 
