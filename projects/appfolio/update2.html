@@ -709,6 +709,8 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="multimodality-using-constrained-adaptive-priors">
 <h3>Multimodality Using Constrained Adaptive Priors<a class="headerlink" href="#multimodality-using-constrained-adaptive-priors" title="Permalink to this headline">¶</a></h3>
 <p><img alt="" src="https://media.discordapp.net/attachments/927717200247275561/949423455240077352/unknown.png?width=886&amp;height=171" /></p>
+<p>Another benefit of BiVAEs are their capability to incorporate user/item features in their recommendations by using constrained adaptive priors (CAP). CAPs are used by adding multimodality in by integrating user/item features information into the latent representations that are ultimately sampled from to use as input for the decoder. User/item features are encoded into the same dimensional space as the latent representations and then used as a constraint in a multivariate gaussian distribution with its mean being the sampled user/item latent representation.This final multivariate gaussian distribution is used as
+CAPs allow us to incorporate various information about properties (e.g. price, location, sq. footage, etc) and users (e.g. family, location, etc.)  to make more informed recommendations. Another benefit is that new users/items with few interactions can also be given more accurate recommendations using their prior information. The capabilities and great tested performance of Bilateral Variational autoencoders make it a perfect model for our recommendation system goals.</p>
 </div>
 </div>
 <div class="section" id="hyperparameter-tuning">
